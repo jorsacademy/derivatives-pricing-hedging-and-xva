@@ -31,15 +31,6 @@ class XVAHedgeResult:
     gross_notional: float
     objective_value: float
 
-    @property
-    def unhedged_max_normalized_residual(self) -> float:
-        scale = np.maximum(np.abs(self.residual_sensitivities - (
-            self.residual_sensitivities
-        )), 1.0)
-        # Kept out of public reporting; use benchmark helper instead.
-        return float(np.max(scale))
-
-
 def estimate_xva_sensitivities(
     problem: XVAProblem | None = None,
     bump: float = 1e-4,
