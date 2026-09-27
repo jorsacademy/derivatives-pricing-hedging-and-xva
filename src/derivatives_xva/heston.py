@@ -6,6 +6,7 @@ from dataclasses import dataclass
 
 import numpy as np
 import pandas as pd
+from scipy.integrate import trapezoid
 from scipy.optimize import least_squares
 
 
@@ -117,7 +118,7 @@ def heston_call_price(
     psi = np.exp(-rate * maturity) * phi / denominator
     log_strike = np.log(strike)
     integrand = np.real(np.exp(-1j * v * log_strike) * psi)
-    integral = np.trapz(integrand, v)
+    integral = trapezoid(integrand, v)
     price = np.exp(-damping * log_strike) * integral / np.pi
     return float(max(price, 0.0))
 
