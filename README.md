@@ -1,4 +1,9 @@
 # Derivatives Pricing, Hedging and XVA
+<!-- portfolio-umbrella:start -->
+## Portfolio role
+
+This repository is a primary umbrella repository in the consolidated Jors Academy portfolio. It groups related native research projects under `projects/` and serves as the main entry point for this domain.
+<!-- portfolio-umbrella:end -->
 
 Quantitative derivatives research focused on the decision layer around valuation, risk, counterparty exposure and hedge design.
 
