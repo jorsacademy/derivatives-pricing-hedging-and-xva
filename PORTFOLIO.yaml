@@ -1,0 +1,21 @@
+schema_version: 1
+repository: derivatives-pricing-hedging-and-xva
+role: umbrella
+axis: application
+area: derivatives-xva
+status: active
+owner: jorsacademy
+projects:
+  - curve-construction
+  - options-volatility-and-greeks
+  - volatility-surface-calibration
+  - heston-calibration
+  - exotic-monte-carlo
+  - collateral-and-netting
+  - xva-exposure-engine
+  - xva-hedge-optimization
+  - robust-hedge-optimization
+conventions:
+  provenance_records: true
+  reproducibility_expected: true
+  benchmark_assumptions_documented: true
